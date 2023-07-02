@@ -18,10 +18,28 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
+  background: white
+    
     rgb(var(--background-start-rgb));
+}
+
+.hero{
+  @apply flex xl:flex-row flex-col gap-5 relative z-0 max-w-[1440px] mx-auto;
+}
+.custom-button {
+  @apply flex flex-row bg-teal-500 relative justify-center items-center py-3 px-6 outline-none rounded-full text-white hover:bg-teal-400;
+}
+.hero-image-container{
+  @apply xl:flex-[1.5] flex justify-end items-end w-full xl:h-screen;
+}
+.hero-image{
+  @apply relative xl:w-full w-[90%] xl:h-full h-[590px] z-0;
+}
+.bg-hero-bg{
+  background-image: url('/hero-bg.svg');
+  filter: invert(71%) sepia(90%) saturate(3790%) hue-rotate(132deg) brightness(95%) contrast(84%);
+}
+
+.hero-image-overlay{
+  @apply absolute xl:-top-24 xl:-right-1/2 -right-1/4 bg-hero-bg bg-repeat-round -z-10 w-full xl:h-screen h-[590px] overflow-hidden;
 }
