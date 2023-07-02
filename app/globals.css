@@ -43,3 +43,10 @@ body {
 .hero-image-overlay{
   @apply absolute xl:-top-24 xl:-right-1/2 -right-1/4 bg-hero-bg bg-repeat-round -z-10 w-full xl:h-screen h-[590px] overflow-hidden;
 }
+
+.footer-links{
+  @apply flex-1 w-full flex md:justify-end flex-wrap max-md:mt-10 gap-20;
+}
+.footer-link{
+  @apply flex flex-col gap-6 text-base min-w-[170px];
+}
