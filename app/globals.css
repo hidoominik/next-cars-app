@@ -50,3 +50,31 @@ body {
 .footer-link{
   @apply flex flex-col gap-6 text-base min-w-[170px];
 }
+
+.home-text-container{
+  @apply flex flex-col items-start justify-start gap-y-2.5 text-black;
+}
+
+.flex-between {
+  @apply flex justify-between items-center;
+}
+
+.home-filters{
+  @apply mt-12 w-full flex-between items-center flex-wrap gap-5
+}
+
+.home-filters-container{
+  @apply flex justify-start flex-wrap items-center gap-2;
+}
+
+.searchbar-item{
+  @apply flex-1 max-sm:w-full flex justify-start items-center relative;
+}
+
+.search-manufacturer{
+  @apply flex-1 max-sm:w-full flex justify-start items-center;
+}
+
+.search-manufacturer-input{
+  @apply w-full h-[48px] pl-12 p-4 rounded-l-full max-sm:rounded-full bg-slate-200 outline-none cursor-pointer text-sm;
+}
