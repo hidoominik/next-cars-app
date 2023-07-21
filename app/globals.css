@@ -78,3 +78,10 @@ body {
 .search-manufacturer-input{
   @apply w-full h-[48px] pl-12 p-4 rounded-l-full max-sm:rounded-full bg-slate-200 outline-none cursor-pointer text-sm;
 }
+
+.search-manufacturer-options{
+  @apply absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm;
+}
+.search-manufacturer-option{
+  @apply cursor-default select-none py-2 pl-10 pr-4;
+}
