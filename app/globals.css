@@ -67,6 +67,14 @@ body {
   @apply flex justify-start flex-wrap items-center gap-2;
 }
 
+.home-error-container{
+  @apply mt-16 flex justify-center items-center flex-col gap-2;
+}
+
+.home-cars-wrapper{
+  @apply grid 2xl:grid-cols-4 xl:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full gap-8 pt-14;
+}
+
 .searchbar-item{
   @apply flex-1 max-sm:w-full flex justify-start items-center relative;
 }
@@ -84,4 +92,48 @@ body {
 }
 .search-manufacturer-option{
   @apply cursor-default select-none py-2 pl-10 pr-4;
+}
+
+.car-card {
+  @apply flex flex-col p-6 justify-center items-start text-black bg-teal-100 hover:bg-white hover:shadow-md rounded-3xl;
+}
+
+.car-card-content {
+  @apply w-full flex justify-between items-start gap-2;
+}
+
+.car-card-content-title {
+  @apply text-[22px] leading-[26px] font-bold capitalize;
+}
+
+.car-card-price {
+  @apply flex mt-6 text-[32px] leading-[38px] font-extrabold;
+}
+
+.car-card-price-dollar {
+  @apply self-start text-[14px] leading-[17px] font-semibold;
+}
+
+.car-card-price-day {
+  @apply self-end text-[14px] leading-[17px] font-medium;
+}
+
+.car-card-image {
+  @apply relative w-full h-40 my-3 object-contain;
+}
+
+.car-card-icon-container {
+  @apply flex group-hover:invisible w-full justify-between text-gray-800;
+}
+
+.car-card-icon {
+  @apply flex flex-col justify-center items-center gap-2;
+}
+
+.car-card-icon-text {
+  @apply text-[14px] leading-[17px];
+}
+
+.car-card-btn-container {
+  @apply hidden group-hover:flex absolute bottom-0 w-full z-10;
 }
