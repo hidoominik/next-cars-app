@@ -10,6 +10,7 @@ const SearchBar = () => {
     const [manufacturer, setManufacturer] = useState('');
     const [model, setModel] = useState("")
     const router = useRouter();
+    
     const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
       if(manufacturer === '' && model === ''){
@@ -17,6 +18,7 @@ const SearchBar = () => {
       }
       updateSearchParams(model.toLocaleLowerCase(), manufacturer.toLowerCase())
     }
+
     const updateSearchParams = (model:string, manufacturer:string) =>{
       const searchParams = new URLSearchParams(window.location.search);
       if(model){
@@ -35,8 +37,9 @@ const SearchBar = () => {
 
       const newPathname = `${window.location.pathname}?${searchParams.toString()}`
       router.push(newPathname);
-
     }
+
+
   return (
     <form className='searchbar' onSubmit={handleSearch}>
         <div className="searchbar-item">
